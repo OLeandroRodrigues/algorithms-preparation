@@ -19,22 +19,18 @@ with a focus on **Big Tech interviews** and **formal proofs of correctness and c
 
 ## 📂 Structure
 
-- `python/`, `java/`, `csharp/` → code and unit tests  
-- `proofs/` → formal proofs (correctness, termination, complexity) + handwritten drafts (`img/`)  
-
----
-
-## 📑 Proofs
-
-See [`proofs/README.md`](./proofs/README.md) for the structure and index of formal proofs.  
+- `python/` → Python implementations (algorithms, data structures, problems, tests)
+- `java/` → Java implementations (same structure as above)
+- `csharp/` → C# implementations (same structure as above)
+- `templates/` → Reusable README templates (algorithm_readme.md, ds_readme.md, problem_readme.md)
 
 ---
 
 ## 🧪 Tests
 
-- **Python** → [`python/README.md`](./python/README.md)  
-- **Java** → [`java/README.md`](./java/README.md)  
-- **C#** → [`csharp/README.md`](./csharp/README.md)  
+- **Python** → [Python tests](./python/tests/)  
+- **Java** → [Java tests](./java/tests/)  
+- **C#** → [C# tests](./csharp/tests/)  
 
 Each implementation has unit tests covering correctness and edge cases.  
 
@@ -58,10 +54,10 @@ Each implementation has unit tests covering correctness and edge cases.
 This repository is more than just coding solutions:  
 
 - Practice of **core CS fundamentals** (search, sorting, trees, graphs, DP, greedy, backtracking).  
-- Documentation of **formal reasoning** → proofs of correctness, termination, and complexity analysis.  
+- Each algorithm/data structure folder includes its **theoretical background**: proof of correctness, termination arguments, and complexity analysis.  
 - Demonstration of versatility across **concise scripting (Python)** and **compiled OOP languages (Java & C#)**.  
-- Showcasing both the **engineering perspective** (unit tests, clean code) and the **theoretical perspective** (mathematical proofs).  
+- Highlights both the **engineering perspective** (clean, production-ready code, unit tests) and the **theoretical perspective** (formal reasoning, invariants, and handwritten drafts).  
 
 ---
 
-📷 Some proofs also include my **handwritten drafts** in `/img/` to illustrate the reasoning process behind the final formalization.
+📷 Visuals such as diagrams, step-by-step traces, and scanned handwritten notes are stored in each algorithm’s local `assets/` folder and linked inside the corresponding `README.md`.
