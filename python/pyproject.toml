@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+# just collect tests in the python/tests
+testpaths = ["tests"]
+
+# difine directory "." means current directory
+pythonpath = ["."]
+
+# defaul flag
+addopts = "-ra -q"

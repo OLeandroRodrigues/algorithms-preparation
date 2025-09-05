@@ -1,0 +1,8 @@
+# --- Testing ---
+pytest>=8.0.0
+pytest-sugar>=1.0.0
+
+# --- Code quality ---
+black>=24.0.0      # automatic code formatter
+ruff>=0.5.0        # ultra-fast linter (can replace flake8 + isort + pylint in many cases)
+mypy>=1.10.0       # static type checker
