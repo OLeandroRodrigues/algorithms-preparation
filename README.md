@@ -13,25 +13,25 @@ with a focus on **Big Tech interviews** and **formal proofs of correctness and c
 ## 📌 Languages
 
 - **Python** → chosen for its **clarity and conciseness**, ideal for interviews.  
-- **Java** → a **compiled, strongly typed language**, aligned with my **OCP Java SE 11 certification preparation**.  
-- **C#** → a **compiled language**, leveraging **13+ years of enterprise experience**.  
+- **Java**   → a **compiled, strongly typed language**, aligned with my **OCP Java SE 11 certification preparation**.  
+- **C#**     → a **compiled language**, leveraging **13+ years of enterprise experience**.  
 
 ---
 
 ## 📂 Structure
 
-- `python/` → Python implementations (algorithms, data structures, problems, tests)
-- `java/` → Java implementations (same structure as above)
-- `csharp/` → C# implementations (same structure as above)
+- `python/`    → Python implementations (algorithms, data structures, problems, tests)
+- `java/`      → Java implementations (same structure as above)
+- `csharp/`    → C# implementations (same structure as above)
 - `templates/` → Reusable README templates (algorithm_readme.md, ds_readme.md, problem_readme.md)
 
 ---
 
 ## 🧪 Tests
 
-- **Python** → [Python tests](./python/tests/)  
-- **Java** → [Java tests](./java/tests/)  
-- **C#** → [C# tests](./csharp/tests/)  
+- **Python**  → [Python tests](./python/tests/)  
+- **Java**    → [Java tests](./java/tests/)  
+- **C#**      → [C# tests](./csharp/tests/)  
 
 Each implementation has unit tests covering correctness and edge cases.  
 
@@ -40,7 +40,7 @@ Each implementation has unit tests covering correctness and edge cases.
 ## 🚀 Roadmap
 
 - [ ] Search (all languages)  
-- [ ] Sorting (all languages)  
+- [x] Sorting (all languages)  
 - [ ] Dynamic Programming (all languages)
 - [ ] Graphs (all languages)
 - [ ] Trees (all languages)
