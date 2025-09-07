@@ -1,0 +1,10 @@
+# Java Requirements for Algorithms Preparation
+
+JDK 11+  (recommended Temurin / Adoptium)
+https://adoptium.net/
+
+JUnit 5 Console (downloaded automatically by run_tests.sh)
+https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/
+
+How to run tests locally:
+bash java/run_tests.sh
