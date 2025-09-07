@@ -1,5 +1,6 @@
 # 🧮 Algorithms Preparation (Python · Java · C#)
 
+[![CI](https://github.com/OLeandroRodrigues/algorithms-preparation/actions/workflows/ci.yml/badge.svg)](https://github.com/OLeandroRodrigues/algorithms-preparation/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Java](https://img.shields.io/badge/Java-11-orange.svg)](https://www.oracle.com/java/)
 [![C#](https://img.shields.io/badge/C%23-.NET%207-blueviolet.svg)](https://dotnet.microsoft.com/)
