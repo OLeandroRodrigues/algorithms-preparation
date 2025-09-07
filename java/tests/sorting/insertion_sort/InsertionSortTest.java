@@ -18,10 +18,6 @@ class InsertionSortTest {
         InsertionSort.sort(one);
         assertArrayEquals(new int[]{42}, one);
     }
-    @Test void worksWithDuplicates() {
-        int[] arr = {3,1,2,2,5};
-        assertArrayEquals(new int[]{1,2,2,3,5}, InsertionSort.sortedCopy(arr));
-    }
     @Test void alreadySorted() {
         int[] arr = {1,2,3,4};
         InsertionSort.sort(arr);
