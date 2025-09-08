@@ -1,0 +1,14 @@
+# Requirements for C# Algorithms Project
+
+# Install .NET SDK (8.0+ recommended)
+https://dotnet.microsoft.com/download
+
+# Dependencies (restored automatically by dotnet)
+- Microsoft.NET.Test.Sdk
+- xunit
+- xunit.runner.visualstudio
+- coverlet.collector
+
+# Restore & Run Tests
+dotnet restore
+dotnet test --nologo
