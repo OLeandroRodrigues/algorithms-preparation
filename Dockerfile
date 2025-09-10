@@ -4,16 +4,16 @@
 # This image bundles everything needed to run tests for:
 # - Python (3.11+)
 # - Java (JDK 17 + JUnit Platform Console)
-# - C# (.NET SDK 8)
+# - C# (.NET SDK 7)
 # So anyone can run all tests with a single Docker command.
 
-# Base: .NET SDK 8 (includes C# compiler + runtime)
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
+# Base: .NET SDK 7 (includes C# compiler + runtime)
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS base
 
-# Install Java 17 + Python 3 + pip + common tools
+# Install Java 17 + Python 3 + pip + venv + common tools
 RUN apt-get update && apt-get install -y --no-install-recommends \
     openjdk-17-jdk \
-    python3 python3-pip \
+    python3 python3-pip python3-venv \
     curl ca-certificates git \
  && rm -rf /var/lib/apt/lists/*
 
@@ -29,8 +29,12 @@ RUN chmod +x run_all_tests.sh || true \
     && chmod +x java/run_tests.sh || true \
     && chmod +x csharp/run_tests.sh || true
 
-# Install Python dependencies (if requirements.txt exists)
-RUN if [ -f python/requirements.txt ]; then pip install -r python/requirements.txt; fi
+# --- Python dependencies via virtualenv (PEP 668 safe) ---
+ENV VIRTUAL_ENV=/opt/venv
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+RUN python3 -m venv "$VIRTUAL_ENV" \
+ && python3 -m pip install --upgrade pip \
+ && if [ -f python/requirements.txt ]; then pip install -r python/requirements.txt; fi
 
 # Prepare JUnit for Java (optional: download once and cache it)
 RUN if [ -f java/run_tests.sh ]; then bash java/run_tests.sh || true; fi
