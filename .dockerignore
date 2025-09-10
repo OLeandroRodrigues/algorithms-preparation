@@ -1,0 +1,44 @@
+# Git metadata
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+python/.venv/
+
+# Java
+java/lib/
+*.class
+
+# C#
+csharp/**/bin/
+csharp/**/obj/
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Git metadata
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+python/.venv/
+
+# Java
+java/lib/
+*.class
+
+# C#
+csharp/**/bin/
+csharp/**/obj/
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

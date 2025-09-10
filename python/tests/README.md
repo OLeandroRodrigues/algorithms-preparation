@@ -43,4 +43,4 @@ pytest tests/sorting/insertion_sort/test_insertion_sort.py
 
 ---
 
-✨ That’s it! With this setup, you can run and extend the Python test suite with confidence.  
+✨ That’s it! With this setup, you can run and extend the Python test suite.  
