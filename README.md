@@ -37,6 +37,51 @@ Each implementation has unit tests covering correctness and edge cases.
 
 ---
 
+## 🐳 Running with Docker
+
+Build the image and run **all tests (Python + Java + C#)** in one step:
+
+```bash
+docker build -t algorithms-prep .
+docker run --rm -it algorithms-prep
+```
+
+This image automatically:
+- Uses a dedicated Python virtualenv at `/opt/venv` (PEP 668 safe).  
+- Provides a `python` symlink for cross-platform compatibility (`python` → `python3`).  
+- Runs tests for **Python, Java, and C#** in sequence via [`run_all_tests.sh`](./run_all_tests.sh).
+
+---
+
+## 💻 Running Locally (without Docker)
+
+You can also run tests directly on your machine:
+
+* **Python**
+
+  ```bash
+  cd python
+  ./run_tests.sh
+  ```
+
+  On first run, this script will create a local `.venv/` and install dependencies from `requirements.txt`.
+
+* **Java**
+
+  ```bash
+  cd java
+  ./run_tests.sh
+  ```
+
+* **C#**
+
+  ```bash
+  cd csharp
+  ./run_tests.sh
+  ```
+
+---
+
 ## 🚀 Roadmap
 
 - [ ] Search (all languages)  
@@ -61,4 +106,14 @@ This repository is more than just coding solutions:
 
 ---
 
-📷 Visuals such as diagrams, step-by-step traces, and scanned handwritten notes are stored in each algorithm’s local `assets/` folder and linked inside the corresponding `README.md`.
+📷 Each algorithm may include **visuals** such as diagrams, step-by-step traces, or scanned handwritten notes.  
+These are stored in the algorithm’s own `assets/` folder and referenced inside its local `README.md`.
+
+--- 
+
+## ⚙️ Continuous Integration
+
+All tests are executed automatically via **GitHub Actions**.
+See workflow file: [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
+
+---
