@@ -1,39 +1,34 @@
-# ============================
-# Algorithms Preparation - Dockerfile
-# ============================
-# This image bundles everything needed to run tests for:
-# - Python (3.11+)
-# - Java (JDK 17 + JUnit Platform Console)
-# - C# (.NET SDK 8)
-# So anyone can run all tests with a single Docker command.
+#!/usr/bin/env bash
+# run_all_tests.sh
+# Runs all language test suites (Python, Java, C#) in sequence.
+# Works on Linux/macOS/WSL/Git Bash and inside Docker.
 
-# Base: .NET SDK 8 (includes C# compiler + runtime)
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
+set -euo pipefail
 
-# Install Java 17 + Python 3 + pip + common tools
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    openjdk-17-jdk \
-    python3 python3-pip \
-    curl ca-certificates git \
- && rm -rf /var/lib/apt/lists/*
+ROOT="$(cd "$(dirname "$0")" && pwd)"
 
-# Set working directory
-WORKDIR /app
+run_suite() {
+  local label="$1"
+  local script_rel="$2"
+  local script_path="$ROOT/$script_rel"
 
-# Copy the whole repository (honors .dockerignore)
-COPY . .
+  echo "==> ${label} tests"
+  if [[ -f "$script_path" ]]; then
+    # Ensure executable (harmless if already)
+    chmod +x "$script_path" || true
+    bash "$script_path"
+    echo "✔ ${label} tests passed"
+  else
+    echo "✖ ${label} test script not found at: $script_rel"
+    echo "   Create it or remove this suite from run_all_tests.sh"
+    exit 1
+  fi
+  echo
+}
 
-# Make test scripts executable (if they exist)
-RUN chmod +x run_all_tests.sh || true \
-    && chmod +x python/run_tests.sh || true \
-    && chmod +x java/run_tests.sh || true \
-    && chmod +x csharp/run_tests.sh || true
+# Run suites (adjust paths if you rename/move scripts)
+run_suite "Python" "python/run_tests.sh"
+run_suite "Java"   "java/run_tests.sh"
+run_suite "C#"     "csharp/run_tests.sh"
 
-# Install Python dependencies (if requirements.txt exists)
-RUN if [ -f python/requirements.txt ]; then pip install -r python/requirements.txt; fi
-
-# Prepare JUnit for Java (optional: download once and cache it)
-RUN if [ -f java/run_tests.sh ]; then bash java/run_tests.sh || true; fi
-
-# Default command: run all test suites (Python + Java + C#)
-CMD ["bash", "-lc", "./run_all_tests.sh"]
+echo "✅ All test suites passed."
