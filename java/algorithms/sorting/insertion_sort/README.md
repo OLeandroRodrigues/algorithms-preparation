@@ -9,7 +9,7 @@
 ## 📝 Description
 Input: A sequence of n number (a1, a2, ..., an)
 Output: A permutation (a'1,a'2, ..., a'n) such that a'1 <= a'2 <= ... <= a'n
-In other words, recording an array of numbers in decreasing or increasing way
+In other words, reording an array of numbers in decreasing or increasing way
 
 ## 📝 Pseudocode
 cpp
