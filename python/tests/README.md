@@ -39,6 +39,8 @@ Run a specific folder or file:
 ```bash
 pytest tests/sorting/insertion_sort
 pytest tests/sorting/insertion_sort/test_insertion_sort.py
+pytest tests/sorting/merge_sort
+pytest tests/sorting/merge_sort/test_merge_sort.py
 ```
 
 ---
