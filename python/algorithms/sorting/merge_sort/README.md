@@ -107,4 +107,4 @@ The outer loop runs n-1 times and stops.
 
 ## 7. 📷 Handwritten Draft (optional)
 My initial handwritten proof draft is available here:  
-![handwritten draft](./assets/insertion_sort_handwritten.jpg)
+![handwritten draft](./assets/merge_sort_handwritten.jpg)
