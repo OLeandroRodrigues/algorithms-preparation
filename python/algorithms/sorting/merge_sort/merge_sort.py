@@ -34,5 +34,3 @@ def merge_sort(arr):
     
     return arr
 
-
-print(merge_sort([9,8,7,6,5,4,3,2,1]))
