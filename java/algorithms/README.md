@@ -6,6 +6,7 @@ Each algorithm is documented in its own subfolder, including code, proof of corr
 ## 📂 Index of Sorting Algorithms
 
 - [Insertion Sort](./sorting/insertion_sort/README.md)  
+- [Merge Sort](./sorting/merge_sort/README.md)  
 
 ## 🎯 Purpose
 Sorting is one of the most fundamental problems in Computer Science.  
