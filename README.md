@@ -57,28 +57,38 @@ This image automatically:
 
 You can also run tests directly on your machine:
 
-* **Python**
+### Windows (PowerShell)
 
-  ```bash
-  cd python
-  ./run_tests.sh
-  ```
+Run the PowerShell script for the language you want to test:
 
-  On first run, this script will create a local `.venv/` and install dependencies from `requirements.txt`.
+```powershell
+# Java
+cd java
+.\run_tests.ps1
 
-* **Java**
+# C#
+cd csharp
+.\run_tests.ps1
 
-  ```bash
-  cd java
-  ./run_tests.sh
-  ```
+```
 
-* **C#**
+### Linux / macOS (bash)
 
-  ```bash
-  cd csharp
-  ./run_tests.sh
-  ```
+Run the shell script for the language you want to test:
+
+```bash
+# Java
+cd java
+./run_tests.sh
+
+# C#
+cd csharp
+./run_tests.sh
+
+# Python
+cd python
+./run_tests.sh
+```
 
 ---
 
