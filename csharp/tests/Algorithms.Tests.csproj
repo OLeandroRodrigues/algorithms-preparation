@@ -14,5 +14,6 @@
 
   <ItemGroup>
     <Compile Include="../algorithms/sorting/**/*.cs" />
+    <Compile Include="../data_structure/heap/**/*.cs" />
   </ItemGroup>
 </Project>
