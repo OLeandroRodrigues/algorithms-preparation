@@ -1,11 +1,14 @@
-📦 Data Structures
-This folder contains implementations and theoretical analysis of fundamental data structures.  
-Each data structure is organized in its own subfolder, including code, proof of correctness, complexity analysis, and illustrative diagrams (assets/).
+# 📦 Data Structures
 
-📂 Index of Data Structures
+This folder contains implementations and theoretical analysis of **fundamental data structures**.  
+Each data structure is organized in its own subfolder, including code, proof of correctness, complexity analysis, and illustrative diagrams (`assets/`).
+
+## 📂 Index of Data Structures
+
 - [Max Heap](./heap/README.md)  
 
-🎯 Purpose
+## 🎯 Purpose
+
 Data structures are the backbone of Computer Science.  
 Understanding them provides the foundation for designing efficient algorithms and solving complex problems.  
 
