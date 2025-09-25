@@ -85,3 +85,4 @@ Disavantages: It is not stable, that means it doesn't preserve the ordem of the 
 
 ## 7. 📷 Handwritten Draft (optional)
 My initial handwritten proof draft is available here:  
+![handwritten draft](./assets/heap_sort_handwritten.jpg)
