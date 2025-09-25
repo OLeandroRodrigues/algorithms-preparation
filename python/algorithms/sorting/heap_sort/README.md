@@ -36,7 +36,7 @@ HEAPSORT(A,n)
 - [x] Time Complexity  
 - [x] Space Complexity  
 - [x] Additional Notes  
-- [] Handwritten Draft (optional)  
+- [x] Handwritten Draft (optional)  
 
 ---
 
