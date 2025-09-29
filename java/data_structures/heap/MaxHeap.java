@@ -1,4 +1,4 @@
-package heap;
+package data_structures.heap;
 
 import java.util.*; 
 
