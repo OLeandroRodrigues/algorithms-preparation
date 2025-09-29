@@ -1,4 +1,4 @@
-package heap;
+package data_structures.heap;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
