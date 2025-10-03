@@ -128,3 +128,11 @@ All tests are executed automatically via **GitHub Actions**.
 See workflow file: [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 ---
+
+## 📚 References / Referências
+
+The studies and implementations in this repository are based primarily on:
+
+- **Introduction to Algorithms (4th Edition)** – Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+
+---
