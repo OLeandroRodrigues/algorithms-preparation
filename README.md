@@ -129,7 +129,7 @@ See workflow file: [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 ---
 
-## 📚 References / Referências
+## 📚 References 
 
 The studies and implementations in this repository are based primarily on:
 
