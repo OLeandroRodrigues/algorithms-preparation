@@ -1,5 +1,5 @@
 import pytest
-from data_structures.priority_queue.priority_queue import PriorityQueue
+from  data_structures.priority_queue.custom.priority_queue import PriorityQueue
 
 
 def test_push_pop_order_max_priority_queue():
