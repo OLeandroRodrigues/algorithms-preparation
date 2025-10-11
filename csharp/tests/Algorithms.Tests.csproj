@@ -15,5 +15,6 @@
   <ItemGroup>
     <Compile Include="../algorithms/sorting/**/*.cs" />
     <Compile Include="../data_structure/heap/**/*.cs" />
+    <Compile Include="../data_structure/priority_queue/**/*.cs" />
   </ItemGroup>
 </Project>
