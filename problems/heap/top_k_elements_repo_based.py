@@ -2,8 +2,7 @@
 Problem: Find the k largest elements in an array.
 
 Approach:
-  - From Scratch: implement a max-heap of size k.
-  - Repo-based: reuse your MaxHeap (max depending on design).
+  - Version 2(Repo-based): reuse your MaxHeap (max depending on design).
 
 Complexity:
   - Time: O(n log k)

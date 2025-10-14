@@ -2,7 +2,7 @@
 Problem: Find the k largest elements in an array.
 
 Approach:
-  - From Scratch: implement a max-heap of size k.
+  - Version 1 (From Scratch): implement a max-heap of size k.
 
 Complexity:
   - Time: O(n log k)
