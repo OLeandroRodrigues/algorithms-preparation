@@ -23,8 +23,31 @@ with a focus on **Big Tech interviews** and **formal proofs of correctness and c
 - `python/`    → Python implementations (algorithms, data structures, problems, tests)
 - `java/`      → Java implementations (same structure as above)
 - `csharp/`    → C# implementations (same structure as above)
+- `problems/`  → Practical algorithmic exercises applying the implemented data structures and algorithms (interview-style + engineering-style)
 - `templates/` → Reusable README templates (algorithm_readme.md, ds_readme.md, problem_readme.md)
 
+---
+
+## 🧠 Problem-Solving Practice
+
+The **`problems/`** folder is dedicated to **practical algorithmic problem-solving** —  
+where theoretical knowledge from `algorithms/` and `data_structures/` is **applied to real problems** inspired by coding interviews and competitive programming.
+
+Each problem is available in two styles:
+
+| Style | Suffix | Description |
+|--------|---------|-------------|
+| **From Scratch** | `_from_scratch.py` | Manual implementation using only Python primitives — ideal for interview preparation and deep algorithmic understanding. |
+| **Repo-based** | `_repo_based.py` | Reuses the existing data structures (e.g., `MaxHeap`, `PriorityQueue`) from the `/python` package to simulate a more **engineering-oriented** workflow. |
+
+**Example structure:**
+```bash
+problems/
+└── heap/
+    ├── find_k_pairs_with_smallest_sum_from_scratch.py
+    ├── find_k_pairs_with_smallest_sum_repo_based.py
+    └── README.md
+```
 ---
 
 ## 🧪 Tests
