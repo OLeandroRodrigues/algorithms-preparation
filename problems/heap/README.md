@@ -30,9 +30,17 @@ Each problem is implemented in two complementary styles:
 
 ## ⚙️ How to Run Tests
 
-Each file includes lightweight `pytest` tests at the bottom.  
-From the repository root, run:
-
+All problem tests are located under:
 ```bash
-cd problems
-pytest heap -q
+python/tests/problems/
+```
+
+To run the test for a specific problem, execute from the project root:
+```bash
+pytest python/tests/problems/heap/test_find_k_pairs_with_smallest_sum_from_scratch.py -v
+```
+
+Or to run **all problem tests**:
+```bash
+pytest python/tests/problems -v
+```

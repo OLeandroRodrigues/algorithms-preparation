@@ -20,3 +20,21 @@ heap/
 ├── top_k_elements_repo_based.py # uses PriorityQueue or MaxHeap from the repo
 └── README.md
 ```
+
+## ⚙️ Running Tests
+
+All problem tests are located under:
+```bash
+python/tests/problems/
+```
+
+To run the test for a specific problem, execute from the project root:
+```bash
+pytest python/tests/problems/heap/test_find_k_pairs_with_smallest_sum_from_scratch.py -v
+```
+
+Or to run **all problem tests**:
+```bash
+pytest python/tests/problems -v
+```
+
