@@ -15,6 +15,7 @@ Each problem is implemented in two complementary styles:
 | Problem | From Scratch | Repo-based | Description | Time Complexity |
 |----------|---------------|-------------|--------------|----------------|
 | **Top K Elements** | [`top_k_elements_from_scratch.py`](./top_k_elements_from_scratch.py) | [`top_k_elements_repo_based.py`](./top_k_elements_repo_based.py) | Find the **k largest elements** in an unsorted array using a heap. | O(n log k) |
+| **Find K Pairs with Smallest Sums** | [`find_k_pairs_with_smallest_sum_from_scratch.py`](./find_k_pairs_with_smallest_sum_from_scratch.py) | [`N/A`] | Find K Pairs with Smallest Sums using a priority queue. | O(n log k) |
 
 ---
 
