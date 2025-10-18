@@ -35,35 +35,47 @@ Complexity Targets:
     - Space: ...
 
 """
-
 from typing import List, Tuple
 from python.data_structures.priority_queue.builtin.priority_queue_builtin import PriorityQueue
 
-class Solution:
-    def find_k_pairs_with_smallest_sum_repo_based(
-        nums1: List[int],
-        nums2: List[int],
-        k: int,
-    ) -> List[Tuple[int, int]]:
-        if k <= 0 or not nums1 or not nums2:
-            return []
+def find_k_pairs_with_smallest_sum_repo_based(
+    nums1: List[int],
+    nums2: List[int],
+    k: int,
+) -> List[Tuple[int, int]]:
+    if k <= 0 or not nums1 or not nums2:
+        return []
 
-        n1, n2 = len(nums1), len(nums2)
-        limit_i = min(n1, k)
+    n1, n2 = len(nums1), len(nums2)
+    target = min(k, n1 * n2)
 
-        # Min-priority queue by sum
-        pq = PriorityQueue(is_min=True)
+    # Repository's Min-PQ, interface: push(value, priority) and pop() -> value
+    pq = PriorityQueue()
 
-        # Store grid coordinates (i, j) as values; priority is the pair sum
-        for i in range(limit_i):
-            pq.push((i, 0), priority=nums1[i] + nums2[0])
+    # We limit the initially inserted "rows": at most k or n1
+    # Each row i starts at j = 0
+    limit_i = min(n1, k)
+    for i in range(limit_i):
+        u, v = nums1[i], nums2[0]
+        sum = u + v
+        # Lexicographic priority by values, stable by indices
+        priority = (sum, u, v, i, 0)
+        pq.push((i, 0), priority)   # value=(i,j)
 
-        result: List[Tuple[int, int]] = []
+    result: List[Tuple[int, int]] = []
 
-        while not pq.is_empty() and len(result) < k:
-            i, j = pq.pop()
-            result.append((nums1[i], nums2[j]))
-            if j + 1 < n2:
-                pq.push((i, j + 1), priority=nums1[i] + nums2[j + 1])
+    # k-way merge by rows (fixed i, advancing j)
+    while len(result) < target and not pq.is_empty():
+        i, j = pq.pop()            # pop() retorna o value (i, j)
+        u, v = nums1[i], nums2[j]
+        result.append((u, v))
 
-        return result
+        # Move forward in the same row (i), next j
+        nj = j + 1
+        if nj < n2:
+            u2, v2 = nums1[i], nums2[nj]
+            sum2 = u2 + v2
+            priority2 = (sum2, u2, v2, i, nj)
+            pq.push((i, nj), priority2)
+
+    return result
