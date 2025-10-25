@@ -120,6 +120,7 @@ cd python
 - [x] DataStructure (all languages)  
 - [ ] Search (all languages)  
 - [x] Sorting (all languages)  
+- [x] Selection (all languages)  
 - [ ] Dynamic Programming (all languages)
 - [ ] Graphs (all languages)
 - [ ] Trees (all languages)
