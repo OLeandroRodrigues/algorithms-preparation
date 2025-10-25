@@ -54,6 +54,13 @@ def partition(arr, low, high):
     arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return i + 1
 
+def findKthLargest(A,k):
+    if k < 1 or k > len(A):
+        raise IndexError(f"k={k} is out of range for array of length {len(A)}")
+    
+    quick_sort(A, 0, len(A)- 1) 
+    return A[-k]
+     
 # Sample of use
 if __name__ == "__main__":
     A = [3,2,3,1,2,4,5,5,6]
