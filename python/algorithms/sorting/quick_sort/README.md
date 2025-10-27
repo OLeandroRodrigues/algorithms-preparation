@@ -1,4 +1,4 @@
-# 📝 QuickSort Sort Proof
+# 📝 QuickSort Proof
 
 ## 📚 Metadata
 - **Creator / Inventor**: Sir Tony Hoare 
