@@ -37,6 +37,9 @@ How to run:
 ##  The optimal solution for this problem would be based on the Quickselect algorithm.                    ##  
 ##  However, this type of approach has not yet been included in the theoretical section of the repository.##
 ##  Once it is covered, we will revisit this problem and include its optimal version.                     ##
+##  Somedays after:                                                                                       ##
+##  The version with Quickselect algorithm was implemented, it is in the folder directory                 ##
+##  problems/selection/quick_select/find_kth_largest_from_scratch_v2.py                                   ##
 ##################### END   NOTES ##########################################################################
 def quick_sort(arr, low, high):
         if low < high:
