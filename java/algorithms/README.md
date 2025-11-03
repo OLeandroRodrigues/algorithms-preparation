@@ -10,6 +10,7 @@ Each algorithm is documented in its own subfolder, including code, proof of corr
 - [Heap Sort](./sorting/heap_sort/README.md)  
 - [Quick Sort](./sorting/quick_sort/README.md)  
 - [Quick Sort Randomized](./sorting/quick_sort/randomized//README.md)  
+- [Counting Sort](./sorting/counting_sort/README.md)  
 
 ## 📂 Index of Selection Algorithms
 - [Quick Select](./selection/quick_select/README.md)  
