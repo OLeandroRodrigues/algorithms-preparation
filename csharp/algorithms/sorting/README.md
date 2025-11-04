@@ -9,6 +9,8 @@ Each algorithm is documented in its own subfolder, including code, proof of corr
 - [Merge Sort](./sorting/merge_sort/README.md)  
 - [Heap Sort](./sorting/heap_sort/README.md)  
 - [Quick Sort](./sorting/quick_sort/README.md)  
+- [Quick Sort Randomized](./sorting/quick_sort/randomized/README.md)  
+- [Counting Sort](./sorting/counting_sort/README.md)  
 
 ## 🎯 Purpose
 Sorting is one of the most fundamental problems in Computer Science.  
