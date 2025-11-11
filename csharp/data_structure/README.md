@@ -5,8 +5,9 @@ Each data structure is organized in its own subfolder, including code, proof of 
 
 ## 📂 Index of Data Structures
 
-- [Max Heap](./heap/README.md)  
-- [Min Heap](./heap/README.md)  
+- [Max Heap and Min Heap](./heap/README.md)  
+- [Priority Queue](./priority_queue/README.md)  
+- [Stack](./stack/README.md) 
 
 ## 🎯 Purpose
 
