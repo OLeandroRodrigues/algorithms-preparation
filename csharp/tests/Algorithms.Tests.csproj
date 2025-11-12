@@ -17,6 +17,7 @@
     <Compile Include="../algorithms/selection/**/*.cs" />
     <Compile Include="../data_structure/heap/**/*.cs" />
     <Compile Include="../data_structure/stack/**/*.cs" />
+    <Compile Include="../data_structure/queue/**/*.cs" />
     <Compile Include="../data_structure/priority_queue/**/*.cs" />
   </ItemGroup>
 </Project>
