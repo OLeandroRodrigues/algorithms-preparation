@@ -9,6 +9,7 @@ Each data structure is organized in its own subfolder, including code, proof of 
 - [Priority Queue](./priority_queue/README.md)  
 - [Stack](./stack/README.md)  
 - [Queue](./queue/README.md)  
+- [Singly Linked List](./linkedlist/README.md)  
 
 ## 🎯 Purpose
 
