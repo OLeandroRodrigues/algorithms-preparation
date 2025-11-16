@@ -10,6 +10,7 @@ Each data structure is organized in its own subfolder, including code, proof of 
 - [Stack](./stack/README.md) 
 - [Queue](./queue/README.md)  
 - [Singly Linked List](./linkedlist/README.md)  
+- [Doubly Linked List](./linkedlist/doubly_linked_list/README.md)  
 
 ## 🎯 Purpose
 
