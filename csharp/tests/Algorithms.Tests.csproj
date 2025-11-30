@@ -19,6 +19,7 @@
     <Compile Include="../data_structure/stack/**/*.cs" />
     <Compile Include="../data_structure/queue/**/*.cs" />
     <Compile Include="../data_structure/linkedlist/**/*.cs" />
+    <Compile Include="../data_structure/hash_table/**/*.cs" />
     <Compile Include="../data_structure/priority_queue/**/*.cs" />
   </ItemGroup>
 </Project>
