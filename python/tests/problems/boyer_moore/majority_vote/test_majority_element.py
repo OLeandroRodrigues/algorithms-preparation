@@ -1,5 +1,5 @@
 import pytest
-from problems.boyer_moore.majority_element import Solution
+from problems.boyer_moore.majority_vote.majority_element import Solution
 
 
 def test_majority_element_basic_case():
