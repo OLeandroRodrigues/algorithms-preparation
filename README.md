@@ -118,7 +118,7 @@ cd python
 ## 🚀 Roadmap
 
 - [x] DataStructure (all languages)  
-- [ ] Search (all languages)  
+- [x] Search (all languages)  
 - [x] Sorting (all languages)  
 - [x] Selection (all languages)  
 - [ ] Dynamic Programming (all languages)
