@@ -21,5 +21,6 @@
     <Compile Include="../data_structure/linkedlist/**/*.cs" />
     <Compile Include="../data_structure/hash_table/**/*.cs" />
     <Compile Include="../data_structure/priority_queue/**/*.cs" />
+    <Compile Include="../data_structure/graph/**/*.cs" />
   </ItemGroup>
 </Project>
