@@ -62,5 +62,46 @@ class ListNode:
 
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        # Implement your solution here
-        pass
+        
+        if head is None or k == 1:
+            return head
+
+        dummy = ListNode(0, head)
+        prev_group_tail = dummy
+
+        while True:
+            # 1) Check if there are at least k nodes left
+            kth = prev_group_tail
+            for _ in range(k):
+                kth = kth.next
+                if kth is None:
+                    return dummy.next
+
+            # 2) Identify group boundaries
+            group_head = prev_group_tail.next
+            next_group_head = kth.next
+
+            # 3) Reverse current group
+            prev = next_group_head
+            curr = group_head
+
+            while curr != next_group_head:
+                temp = curr.next
+                curr.next = prev
+                prev = curr
+                curr = temp
+
+            # 4) Reconnect reversed group
+            prev_group_tail.next = kth
+            prev_group_tail = group_head
+        
+       
+
+    
+
+
+
+
+        
+
+        
