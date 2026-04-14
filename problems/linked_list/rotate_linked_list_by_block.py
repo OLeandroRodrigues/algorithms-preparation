@@ -67,5 +67,33 @@ class ListNode:
 
 class Solution:
     def rotateBlock(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        # Implement your solution here
-        pass
+        if head is None or k <= 1:
+            return head
+
+        dummy = ListNode(0, head)
+        prev_block_tail = dummy
+
+        while True:
+            block_start = prev_block_tail.next
+            if block_start is None:
+                break
+
+            block_end = prev_block_tail
+            for _ in range(k):
+                block_end = block_end.next
+                if block_end is None:
+                    return dummy.next
+
+            next_block_start = block_end.next
+
+            prev_to_end = block_start
+            while prev_to_end.next != block_end:
+                prev_to_end = prev_to_end.next
+
+            prev_to_end.next = next_block_start
+            block_end.next = block_start
+            prev_block_tail.next = block_end
+
+            prev_block_tail = prev_to_end
+
+        return dummy.next
